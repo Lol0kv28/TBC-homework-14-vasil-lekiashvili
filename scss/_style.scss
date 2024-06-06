@@ -1,0 +1,255 @@
+body {
+  height: 1500px;
+}
+
+header {
+  width: 1270px;
+  margin: 0 auto;
+  nav {
+    display: flex;
+    align-items: center;
+    gap: 676px;
+    margin-top: 33px;
+
+    ul {
+      display: flex;
+      align-items: center;
+      gap: 50px;
+
+      .burger {
+        display: none;
+      }
+
+      a {
+        li {
+          color: #636060;
+          font-family: $words-font;
+          font-size: 17px;
+        }
+      }
+    }
+  }
+}
+
+.s-1 {
+  background-image: url("../images/sea.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 606px;
+  margin-top: 18px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 31px;
+
+  h1 {
+    font-family: $words-font;
+    font-weight: 700;
+    font-size: 79px;
+    color: white;
+  }
+
+  h2 {
+    font-family: $words-font;
+    font-size: 19px;
+    color: white;
+  }
+}
+
+.s-2 {
+  width: 1242px;
+  margin: 0 auto;
+  margin-top: 84px;
+
+  .my-gap {
+    display: flex;
+    gap: 83px;
+
+    .first-card-info {
+      display: flex;
+      flex-direction: column;
+      gap: 37px;
+      width: 235px;
+      height: 213px;
+
+      p {
+        color: #636060;
+        font-family: $words-font;
+        font-size: 20px;
+        width: 235px;
+        height: 115px;
+      }
+
+      .hot-services-gap {
+        display: flex;
+        flex-direction: column;
+        gap: 9px;
+
+        h1 {
+          color: #636060;
+          font-family: $words-font;
+          font-size: 17px;
+        }
+
+        h2 {
+          color: #010101;
+          font-family: $words-font;
+          font-size: 28px;
+        }
+      }
+    }
+
+    .cards {
+      width: 930px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 33px;
+
+      .card {
+        width: 286px;
+        height: 312px;
+        display: flex;
+        flex-direction: column;
+        gap: 23px;
+
+        .card-mygap {
+          display: flex;
+          flex-direction: column;
+          gap: 9px;
+
+          h1 {
+            color: #343232;
+            font-family: $words-font;
+            font-size: 19px;
+          }
+          p {
+            color: #636060;
+            font-family: $words-font;
+            font-size: 18px;
+            width: 286px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1290px) {
+  .my-gap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 1285px) {
+  header {
+    width: 1194px;
+    margin: 0 auto;
+
+    nav {
+      gap: 600px;
+    }
+  }
+
+  .s-2 {
+    width: 100%;
+  }
+}
+@media (max-width: 1195px) {
+  header {
+    width: 900px;
+    margin: 0 auto;
+
+    nav {
+      gap: 306px;
+    }
+  }
+}
+
+@media (max-width: 970px) {
+  .s-2 {
+    .my-gap {
+      .cards {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 605px;
+      }
+    }
+  }
+}
+
+@media (max-width: 950px) {
+  header {
+    width: 700px;
+    margin: 0 auto;
+
+    nav {
+      gap: 106px;
+    }
+  }
+}
+
+@media (max-width: 730px) {
+  header {
+    width: 170px;
+    nav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      ul {
+        a {
+          display: none;
+        }
+        .burger {
+          display: inline-block;
+          .fa-bars {
+            font-size: xx-large;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .s-1 {
+    h1 {
+      font-size: 60px;
+    }
+  }
+
+  .s-2 {
+    .my-gap {
+      .cards {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+      }
+    }
+  }
+}
+
+@media (max-width: 490px) {
+  .s-1 {
+    h1 {
+      font-size: 40px;
+    }
+  }
+}
+
+@media (max-width: 350px) {
+  .s-1 {
+    h1 {
+      font-size: 30px;
+    }
+    h2 {
+      font-size: 15px;
+      font-weight: 700;
+    }
+  }
+}
